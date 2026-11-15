@@ -180,7 +180,28 @@ textarea.form-control { min-height: 110px; resize: vertical; }
 .legal-heading-band h1 { margin: 0 0 4px; font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 800; }
 .legal-heading-band > p { margin: 0; font-size: 1.12rem; font-weight: 700; line-height: 1.35; }
 .legal-heading-band .legal-updated { margin-top: 10px; font-size: .9rem; font-weight: 400; }
-.legal-outer { background: linear-gradient(90deg, var(--baro-olive) 0 34px, #fff 34px calc(100% - 34px), var(--baro-olive) calc(100% - 34px)); padding: 28px 34px 12px; }
+/* change olive side rails via border instead of a gradient */
+.legal-outer { background: #fff; border-left: 34px solid var(--baro-olive); padding: 28px 34px 12px; }
+.legal-content { max-width: 1040px; min-height: 780px; margin-inline: auto; padding: 8px clamp(24px, 6vw, 90px) 18px; background: #fff; font-family: Georgia, "Times New Roman", serif; }
+.legal-content p { margin: 0 0 16px; }
+.legal-intro, .legal-section p { text-indent: 40px; }
+.legal-intro { min-height: 50px; }
+.legal-section { margin-top: 22px; }
+.legal-section h2 { margin: 0 0 8px; font-family: var(--body-font); font-size: 1.15rem; font-weight: 800; color: #111; }
+.legal-content .back-to-top-wrap { font-family: var(--body-font); }
+.legal-content .back-to-top-wrap .text-link { font-size: .86rem; }
+.legal-bullet-list,
+.legal-number-list { list-style-position: outside; padding-left: 5rem; margin: 1rem 0; }
+.legal-bullet-list { list-style-type: disc; }
+.legal-number-list { list-style-type: decimal; }
+.legal-bold { font-weight: 700; }
+
+/*
+.legal-heading-band { background: var(--baro-olive); color: #fff; text-align: center; padding: 22px 20px 26px; }
+.legal-heading-band h1 { margin: 0 0 4px; font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 800; }
+.legal-heading-band > p { margin: 0; font-size: 1.12rem; font-weight: 700; line-height: 1.35; }
+.legal-heading-band .legal-updated { margin-top: 10px; font-size: .9rem; font-weight: 400; }
+.legal-outer { background: linear-gradient(90deg, var(--baro-olive) 0 34px, #fff 34px calc(100%), var(--baro-olive) calc(100% - 34px)); padding: 28px 34px 12px; }
 .legal-content { max-width: 1040px; min-height: 780px; margin: 0 auto; background: #fff; padding: 8px clamp(24px, 6vw, 90px) 18px; font-family: Georgia, "Times New Roman", serif; }
 .legal-content p { margin: 0 0 16px; }
 .legal-intro { min-height: 50px; text-indent: 40px; }
@@ -190,11 +211,11 @@ textarea.form-control { min-height: 110px; resize: vertical; }
 .legal-content .back-to-top-wrap { font-family: var(--body-font); }
 .legal-content .back-to-top-wrap .text-link { font-size: .86rem; }
 
-
-
 .legal-bullet-list { list-style: disc; list-style-position: outside; padding-left: 5rem; margin: 1rem 0; }
 .legal-number-list { list-style-type: decimal; list-style-position: outside; padding-left: 5rem; margin: 1rem 0; }
 .legal-bold { font-weight: bold; }
+*/
+
 
 
 /*product detail pages*/
