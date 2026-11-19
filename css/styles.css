@@ -1,9 +1,3 @@
-/* 
-  if you rename any classes or id, plaese edit here too...
-  just be sure to verify and test them thoroughly.
-  i did not minify it yet; it is hard to read if I do.
-*/
-
 
 :root {
   --baro-navy: #23354b;
@@ -93,26 +87,16 @@ button, input, select, textarea { font: inherit; }
 .text-link { color: var(--baro-rust); font-weight: 700; text-underline-offset: 4px; }
 
 
-.hero-image {
-  display: grid; place-items: center; width: 100%; height: 100%; min-height: 150px; max-height: 100%; place-item: center; 
-  background: #e1e3e2; border: 1px solid #c3c7c5; color: #555d5a;
-  font-size: .9rem; letter-spacing: .02em; text-align: center;
-  filter: brightness(0.6);
-}
-
 
 /*homepage*/
 .home-hero { position: relative; min-height: 234px; overflow: hidden; background: #dedfdd; }
-
-/*overflow, hide the excess. object-fit, cut the excess. object-postion, adjust what part of image is shown and hidden (for this, the bottom is shown)*/
-.hero-image { position: absolute; inset: 0; border: 0; overflow: hidden; }
+/* hero image: overflow hides the excess, object-fit crops the image to fill, object-position picks which part stays visible (top of the image here) */
+.hero-image { position: absolute; inset: 0; overflow: hidden; display: grid; place-items: center; width: 100%; height: 100%; background: #e1e3e2; border: 1px solid #c3c7c5; color: #555d5a; font-size: .9rem; letter-spacing: .02em; text-align: center; filter: brightness(0.6); }
 .hero-image img { width: 100%; height: 100%; max-height: 300px; object-fit: cover; object-position: top; }
-.hero-image img { width: 100%; height: 100%; max-height: 300px; object-fit: cover; object-position: top; }
-
 .hero-content { position: relative; z-index: 1; min-height: 234px; display: flex; flex-direction: column; justify-content: center; padding: 28px; }
-.hero-content h1 { margin: 0 0 6px; max-width: 600px; color: var(--baro-navy); font-family: var(--body-font); font-size: clamp(2rem, 3.8vw, 3rem); font-weight: 800; line-height: 1.06; }
-.hero-content p { margin: 0; color: var(--baro-navy); }
-.hero-content h1, .hero-content p { text-shadow: 0 0 5px var(--baro-mist), 0 0 15px var(--baro-mist); } /*hero text shadows*/
+.hero-content h1 { margin: 0 0 6px; max-width: 600px; font-family: var(--body-font); font-size: clamp(2rem, 3.8vw, 3rem); font-weight: 800; line-height: 1.06; }
+.hero-content h1, .hero-content p { color: var(--baro-navy); text-shadow: 0 0 5px var(--baro-mist), 0 0 15px var(--baro-mist); } /* hero text shadow */
+.hero-content p { margin: 0; }
 .featured-section { padding-block: 30px 32px; }
 .section-heading-row { display: flex; justify-content: space-between; align-items: center; gap: 18px; border-top: 1px solid var(--baro-line); padding-top: 12px; margin-bottom: 16px; }
 .section-heading-row h2 { margin: 0; color: #111; font-size: 1.45rem; font-weight: 800; }
@@ -125,20 +109,14 @@ button, input, select, textarea { font: inherit; }
 .product-card h3 a { text-decoration: none; }
 .product-card-price { margin: 0 0 8px; color: var(--baro-olive); font-weight: 800; }
 .home-about { display: grid; grid-template-columns: minmax(300px, 43%) 1fr; min-height: 300px; background: var(--baro-olive); }
-.home-about-copy { padding: 44px max(32px, calc((100vw - var(--content-width)) / 2)); padding-right: 48px; color: #fff; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
-.home-about-copy h2 { font-size: 1.45rem; margin: 0 0 10px; font-weight: 800; }
+.home-about-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 44px 48px 44px max(32px, calc((100vw - var(--content-width)) / 2)); color: #fff; }
+.home-about-copy h2 { margin: 0 0 10px; font-size: 1.45rem; font-weight: 800; }
 .home-about-copy p { max-width: 420px; margin: 0 0 16px; }
 .home-about-copy .text-link { color: #fff; }
-
-
-/*this is about section in homepage: overflow, hide the excess. object-fit, cut the excess. object-postion, adjust what part of image is shown and hidden (for this, the bottom is shown)*/
+/* about section image: overflow hides the excess, object-fit crops to fill, object-position keeps the center of the image visible */
 .home-about-image { max-width: 100%; height: 400px; overflow: hidden; }
-.home-about-image img {width: 100%; height: 100%; object-fit: cover; object-position: center;} 
+.home-about-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .home-about-image .generic-images { border: 0; min-height: 100%; }
-
-
-
-
 
 /*about page*/
 .about-hero { display: grid; grid-template-columns: minmax(360px, 43%) minmax(0, 1fr); min-height: 100%; }
@@ -171,11 +149,7 @@ textarea.form-control { min-height: 110px; resize: vertical; }
 .support-note { color: var(--baro-rust); font-family: var(--heading-font); font-weight: 700; }
 .back-to-top-wrap { text-align: center; padding: 32px 0 14px; }
 
-
-
-
 /*privacy and terms pages*/
-
 .legal-heading-band { background: var(--baro-olive); color: #fff; text-align: center; padding: 22px 20px 26px; }
 .legal-heading-band h1 { margin: 0 0 4px; font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 800; }
 .legal-heading-band > p { margin: 0; font-size: 1.12rem; font-weight: 700; line-height: 1.35; }
@@ -194,7 +168,6 @@ textarea.form-control { min-height: 110px; resize: vertical; }
 .legal-bullet-list { list-style-type: disc; }
 .legal-number-list { list-style-type: decimal; }
 .legal-bold { font-weight: 700; }
-
 
 /*product detail pages*/
 .product-page { padding-block: 38px 28px; }
@@ -255,8 +228,6 @@ textarea.form-control { min-height: 110px; resize: vertical; }
   .footer-top { grid-template-columns: 1fr 1fr; }
   .footer-social { justify-content: flex-start; }
 }
-
-
 
 @media (max-width: 640px) {
   .site-container { width: min(calc(100% - 32px), var(--content-width)); }
