@@ -1,8 +1,5 @@
-// main.js file
-// // js/main.js
-//Contact page.js section 
+//contact page JS section 
 
-//This is the Baro address that we will see in the Form
 const TO_ADDRESS = "hello@examplewebsite143.com";
 const form = document.querySelector("#contact-form");
 

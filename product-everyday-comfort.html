@@ -9,25 +9,19 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-
 <header class="site-header" id="top">
   <div class="site-container header-inner">
     <a class="brand brand-header" href="index.html" aria-label="BA-RO home">
       <span class="brand-logo" aria-hidden="true"><img src="images/header-baro-logo.svg" alt="BA-RO Logo"></span>
     </a>
-
-    <!--middle header links in a large screen-->
     <nav class="primary-nav" aria-label="Main navigation">
       <a href="index.html" aria-label="Go to Homepage">Home</a>
       <a href="index.html#shop" aria-label="Go to Shop section">Shop</a>
       <a href="about.html" aria-label="Go to About Us page">About</a>
       <a href="contact.html" aria-label="Go to contact us page">Contact</a>
     </nav>
-
-    <!--middle header links go to right hamburger panel on small screens-->
     <details class="mobile-nav">
       <summary aria-label="Open navigation menu">Menu</summary>
       <nav aria-label="Mobile navigation">
@@ -37,44 +31,37 @@
         <a href="contact.html">Contact</a>
       </nav>
     </details>
-
-    <!-- right non-interactive, extra features icons, no href="" yet. Vanish in mobile version-->
     <div class="header-tools" aria-hidden="true">
       <a href="#" class="header-tool" id="search-icon"><img src="images/header-search-icon.svg" alt="Search for an item."></a>
       <a href="#" class="header-tool" id="account-icon"><img src="images/header-account-icon.svg" alt="Go to Accounts."></a>
       <a href="#" class="header-tool" id="follow-icon"><img src="images/header-heart-icon.svg" alt="Follow us on social media."></a>
       <a href="#" class="header-tool" id="dark-icon"><img src="images/header-dark-icon.svg" alt="Toggle on dark mode."></a>
     </div>
-
   </div>
 </header>
 
 <main id="main-content" class="product-page site-container">
   <div class="product-layout">
+
     <section class="product-gallery" aria-label="Product images">
       <div class="product-image-main">
-        <!-- main shirt image left-->
         <img src="images/shirt-everyday-comfort-front.png" aria-label="Main product image desc" alt="BA-RO everyday comfort shirt main image">
       </div>
       <div class="product-image-thumbs">
         <div class="product-image-thumb">
-          <!-- top-right shirt image -->
           <img src="images/shirt-everyday-comfort-back.png" aria-label="Alternate product desc" alt="BA-RO everyday comfort shirt top right image">
         </div>
         <div class="product-image-thumb">
-          <!-- bot-right shirt-->
           <img src="images/shirt-everyday-comfort-detail.png" aria-label="Alternate product desc" alt="BA-RO everyday comfort shirt bottom right image">
         </div>
       </div>
     </section>
 
-    <!--shirt descriptions-->
     <section class="product-information" aria-labelledby="product-title">
       <h1 id="product-title">Everyday Comfort Tee</h1>
       <p class="product-subtitle"></p>
       <p class="product-price">&#8369; 399.99</p>
 
-      <!--select color-->
       <form class="product-order-form" data-email-form="order">
         <label class="form-label" for="product-color">Color</label>
         <select class="form-control" id="product-color" name="color" required>
@@ -98,8 +85,8 @@
           <input class="form-control quantity-input" type="number" id="product-quantity" name="quantity" min="1" step="1" value="1" required />
         </div>
 
-        <!-- enable button after doing the JS Method #2 from Module 5.2. the generated email must go to orders@examplewebsite143.com and include product, color, size, and quantity. -->
         <button class="btn btn-rust w-100 order-now-button" type="submit">Order Now</button>
+
       </form>
 
       <section class="product-details" aria-labelledby="product-details-title">
@@ -116,23 +103,22 @@
   <section class="reviews-section" aria-labelledby="reviews-title">
     <div class="reviews-heading">
       <h2 id="reviews-title">Customer Reviews</h2>
-      <!-- add a dummy review. make sure no names are the same. -->
     </div>
     <div class="review-grid">
+
       <article class="review">
-        <!-- Name + stars + mock review. -->
         <p>Patrick Star! <span id="brown-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
         <p> It's good that it fits me so GOOD! 10 stars out of 5!!</p>
       </article>
+
       <article class="review">
-        <!-- Name + with stars + mock review. -->
         <p>Squidward<span id="brown-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
         <p> I guess it's fine... I do hope for more color variations soon in the future. </p>
       </article>
+
     </div>
   </section>
 </main>
-
 
 <footer class="site-footer">
   <div class="site-container footer-inner">
@@ -143,18 +129,15 @@
         </a>
         <p class="footer-tagline">Fashion made simple.<br />Style made personal.</p>
       </div>
-
       <div class="footer-column">
         <h2>Shop</h2>
         <a href="index.html#shop">All products</a>
       </div>
-
       <div class="footer-column footer-contact">
         <h2>Contact Us</h2>
         <p>Call us: <a href="contact.html">(09) 9019 9283</a></p>
         <p>Email us: <a href="contact.html">hello@examplewebsite143.com</a></p>
       </div>
-
       <div class="footer-social" role="group" aria-label="Social media row">
         <span aria-hidden="true">
           <a href="#" aria-label="Facebook"><img src="images/footer-social-fblogo.svg" alt=""></a>
@@ -165,7 +148,6 @@
         </span>
       </div>
     </div>
-
     <div class="footer-bottom">
       <p>&copy; 2026 BA-RO</p>
       <nav aria-label="Footer navigation">

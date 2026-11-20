@@ -1,5 +1,5 @@
 // js/order.js
-// email the reciever hello@BARO.com if it needs to be changed
+
 const ORDER_ADDRESS = "orders@examplewebsite142.com";
 const orderForm = document.querySelector(".product-order-form");
 
